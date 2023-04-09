@@ -50,3 +50,14 @@ function hide_number(){
     let element_window_number = document.querySelector(".mask");
     element_window_number.classList.add("hidden");
 }
+
+
+
+function addclass(){
+    if(windowWidth > 768)$("#Flexhide").addClass("flexx");
+    else $("#Flexhide").removeClass("flexx");
+
+
+ }
+
+
