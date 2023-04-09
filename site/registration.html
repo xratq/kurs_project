@@ -2,21 +2,21 @@
 <html>
 <head>
     <meta charset="UTF-8" content="width=device-width, initial-scale=1">
-    <link href="/style/reg.css" rel="stylesheet">
+    <link href="../style/reg.css" rel="stylesheet">
 </head>
 <body>
 
 <h3>Регистрация</h3>
 
 <div class="container">
-    <form action="/scripts/register.php">
-        <label for="username">Логин</label>
-        <input type="text" id="username" name="username" required>
+    <form action="../scripts/register.php" method="post">
+        <label>Логин</label>
+        <input type="text" id="username" name="log" required>
 
-        <label for="nick">Желаемый ник</label>
+        <label>Желаемый ник</label>
         <input type="text" id="nick" name="nick" required>
 
-        <label for="psw">Пароль</label>
+        <label>Пароль</label>
         <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Пароль должен содержать как минимум одну цифру, одну заглавную букву, одну строчную букву и как минимум 8 символов" required>
 
         <input type="Submit" value="Потвердить">

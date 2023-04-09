@@ -1,12 +1,15 @@
 <?php
 include_once("db.php");
 
-$u = $_POST['username'];
+
+$l = $_POST['log'];
 $n = $_POST['nick'];
 $p = $_POST['psw'];
 
 $sql = "Insert into `users` (`login`,`nickname`, `password`) values
- ('$u','$n', '$p')";
+ ('$l','$n', '$p')";
+
+ if ( $l )
 
  if ( mysqli_query($link,$sql) == 0 )
     {
@@ -17,13 +20,15 @@ $sql = "Insert into `users` (`login`,`nickname`, `password`) values
             window.location='../registration.html';
           </script>";
     }
+
     else
-    {
-    echo"<script>
-          alert('Вы зарегистрированы');
-        </script>";
-    echo "<script>
-        window.location='../index.html';
-          </script>";
-    }
+        {
+        echo"<script>
+              alert('Вы зарегистрированы');
+            </script>";
+        echo "<script>
+            window.location='../site/home.html';
+              </script>";
+        }
+
 ?>
