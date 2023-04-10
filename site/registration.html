@@ -2,14 +2,14 @@
 <html>
 <head>
     <meta charset="UTF-8" content="width=device-width, initial-scale=1">
-    <link href="/style/reg.css" rel="stylesheet">
+    <link href="../style/reg.css" rel="stylesheet">
 </head>
 <body>
 
 <h3>Регистрация</h3>
 
 <div class="container">
-    <form action="/scripts/register.php">
+    <form action="../scripts/register.php" method="post">
         <label for="username">Логин</label>
         <input type="text" id="username" name="username" required>
 
@@ -21,8 +21,8 @@
 
         <input type="Submit" value="Потвердить">
     </form>
+    <a href="home.html"><button>Вернуться на главную</button></a>
 </div>
-
 <div id="message">
     <h3>Пароль должен содержать следующее:</h3>
     <p id="letter" class="invalid"> <b>Строчные</b> буквы </p>

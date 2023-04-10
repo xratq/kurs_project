@@ -14,7 +14,7 @@ $sql = "Insert into `users` (`login`,`nickname`, `password`) values
     alert('Ошибка! Пользователь не добавлен! Возможно такой логин уже занят. Попробуйте еще раз');
           </script>";
     echo "<script>
-            window.location='../registration.html';
+            window.location='../site/registration.html';
           </script>";
     }
     else
@@ -23,7 +23,7 @@ $sql = "Insert into `users` (`login`,`nickname`, `password`) values
           alert('Вы зарегистрированы');
         </script>";
     echo "<script>
-        window.location='../index.html';
+        window.location='../site/home.html';
           </script>";
     }
 ?>
