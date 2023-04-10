@@ -3,8 +3,10 @@ include_once("db.php");
 
 $l = $_POST['log'];
 $p = $_POST['pass'];
+$log = "admin";
+$pass = "admin";
 
-if ($l = 'admin' and $p = 'admin'){
+if ($l == $log and $p == $pass){
      echo"<script>
                   alert('Добро пожаловать');
                 </script>";
