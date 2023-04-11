@@ -12,7 +12,7 @@ if ($l == $log and $p == $pass){
                 </script>";
     echo
         "<script>
-                          window.location='../site/admin.html';
+                          window.location='../admin/admin.html';
                         </script>";
 }
 
@@ -45,7 +45,7 @@ else{
               alert('Вы вошли.');
             </script>";
         echo "<script>
-              window.location='../site/home.html';
+              window.location='../site/homeusers.html';
               </script>";
         }
 }
