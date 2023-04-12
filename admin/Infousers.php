@@ -40,7 +40,6 @@
 <body style="background-image: url(../image/backgr.jpg)">
 <div class="topnav" id="myTopnav">
   <a class="active" href="../admin/admin.html">Главная</a>
-  <a href="#Update">Обновления создать</a>
   <div class="search-container">
     <a href="../admin/admin.html">Выход</a>
 
