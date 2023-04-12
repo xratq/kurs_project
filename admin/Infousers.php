@@ -30,6 +30,10 @@
   .Pop{
   width: 100%;
   }
+
+  a{
+  color: black;
+  }
   </style>
 </head>
 
@@ -38,7 +42,7 @@
   <a class="active" href="../admin/admin.html">Главная</a>
   <a href="#Update">Обновления создать</a>
   <div class="search-container">
-    <a href="../site/home.html">Выход</a>
+    <a href="../admin/admin.html">Выход</a>
 
   </div>
 
@@ -78,9 +82,13 @@ echo "<table><tr><th>Id</th><th>Имя</th><th>Логин</th><th>пароль</
     echo "<td>" . $row["id"] . "</td>";
     echo "<td>" . $row["login"] . "</td>";
     echo "<td>" . $row["nickname"] . "</td>";
-    echo "<td>" . $row["password"] .  "      </td>";?>
-    <td><button>Удалить</button><button>Редактирование</button> </td> <input type="text">
-    <?php
+    echo "<td>" . $row["password"] .  "      </td>";
+    echo "<td><form action='../scripts/delete.php' method='post'>
+                            <input type='hidden' name='id' value='" . $row["id"] . "' />
+                            <input type='submit' value='Удалить'>
+                        <a href='update.php?id=" . $row["id"] . "'>Обновить</a>
+                        </form></td>";
+
     echo "</tr>";
   }
   echo "</table>";
