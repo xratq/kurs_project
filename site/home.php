@@ -4,16 +4,22 @@
     <meta charset="UTF-8" content="width=device-width, initial-scale=1">
     <title>База игр</title>
     <link rel="stylesheet" href="../style/headerstyle.css" />
+    <style>
+        img{
+            width: 350px;
+        }
+
+    </style>
 </head>
 
 <body style="background-image: url(../image/backgr.jpg)">
 <div class="topnav" id="myTopnav">
-    <a class="active" href="home.php">Главная</a>
+    <a class="active" href="#Home">Главная</a>
     <a href="#Update">Обновления</a>
     <a href="#Info" onclick="openNav()" >Инфо </a>
     <div class="search-container">
-        <a href="home.php">Выход</a>
-
+        <a href="login.html">Логин</a>
+        <a href="registration.html">Регистрация</a>
     </div>
 
 
@@ -46,17 +52,10 @@
                     <img src="../image/zmeika.png"  style="width: 350px";>
                     <div>
                         <h5>
-                            Змейка — это игра, в которой игрок маневрирует по растущей линии, которая
-                            становится основным препятствием для самого себя*. Игрок управляет длинным тонким существом,
-                            напоминающим змею, которое бродит по окаймленной плоскости. подбирая еду, стараясь не задеть
-                            собственный хвост или края игровой площадки. игрок использует клавиши со стрелками, чтобы перемещать «змейку» по доске.
+                            Змейка — это игра, в которой игрок маневрирует по растущей линии, которая становится основным препятствием для самого себя*. Игрок управляет длинным тонким существом, напоминающим змею, которое бродит по окаймленной плоскости. подбирая еду, стараясь не задеть собственный хвост или края игровой площадки. игрок использует клавиши со стрелками, чтобы перемещать «змейку» по доске.
                         </h5>
                     </div>
                 </div>
-                <button class="knopka">
-                    <a href="../games/zmeika.html">Играть </a>
-                </button>
-
             </div>
 
             <div class="cardblog ">
@@ -70,20 +69,16 @@
                         </h5>
                     </div>
                 </div>
-                <button class="knopka">
-                   <a href="../games/tetris.html">Играть </a>
-                </button>
-
             </div>
         </div>
         <div class="rightcolumn">
             <div class="cardblog ">
                 <h2>Это платформа создана для проверки </h2>
                 <div class="fakeimg" style="height:100px;">Image</div>
-                <p>На этом сайте размещено множество игр</p>
+                <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
             </div>
             <div class="cardblog ">
-                <h3>Популярные игры</h3>
+                <h3>Popular Post</h3>
                 <div class="fakeimg">Image</div><br>
                 <div class="fakeimg">Image</div><br>
                 <div class="fakeimg">Image</div>
@@ -91,13 +86,14 @@
 
         </div>
     </div>
-</div>
-<div class="footer" style="flex: 100%">
-    <footer>
 
-        <h3 style="color: #f1f1f1">Моя работа все</h3>
-    </footer>
-</div>
-<script src="../scripts/headerscript.js"></script>
+    </div>
+    <div class="footer" style="flex: 100%">
+        <footer>
+
+            <h3 style="color: #f1f1f1">Моя работа все</h3>
+        </footer>
+    </div>
+    <script src="../scripts/headerscript.js"></script>
 </body>
 </html>

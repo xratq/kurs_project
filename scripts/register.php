@@ -23,7 +23,7 @@ $sql = "Insert into `users` (`login`,`nickname`, `password`) values
           alert('Вы зарегистрированы');
         </script>";
     echo "<script>
-        window.location='../site/home.html';
+        window.location='../site/home.php';
           </script>";
     }
 ?>

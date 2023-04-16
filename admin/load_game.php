@@ -57,7 +57,7 @@
 
     <h2>Список Обновлений</h2>
 
-
+<button><a href="add_game.php">Добавить игру</a></button>
  <?php
  $conn = mysqli_connect("localhost", "root", "root", "games");
  if (!$conn) {
@@ -80,7 +80,7 @@
      echo "<td>" . $row["placement_date"] .  "      </td>";
      echo "<td>" . $row["description"] .  "      </td>";
      echo "<td>" . $row["img_path"] .  "      </td>";
-     echo "<td><form action='../scripts/delete.php' method='post'>
+     echo "<td><form action='../scripts/delete_game.php' method='post'>
                              <input type='hidden' name='id' value='" . $row["id"] . "' />
                              <input type='submit' value='Удалить'>
                          <a href='game_update.php?id=" . $row["id"] . "'>Обновить</a>

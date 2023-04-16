@@ -51,6 +51,7 @@
 <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
   <div class="overlay-content">
+
     <a href="#">Редактирование профиля</a>
     <a href="#">Просмотр счета</a>
     <a href="#">Сервис</a>
