@@ -58,6 +58,7 @@
                 </div>
             </div>
 
+
             <div class="cardblog ">
                 <h2>Тетрис</h2>
                 <h5>Размещена, Апреля 9, 2023</h5>
@@ -70,7 +71,12 @@
                     </div>
                 </div>
             </div>
+
         </div>
+
+
+
+
         <div class="rightcolumn">
             <div class="cardblog ">
                 <h2>Это платформа создана для проверки </h2>
@@ -85,9 +91,92 @@
             </div>
 
         </div>
+
     </div>
 
     </div>
+
+
+    <?php
+     $conn = mysqli_connect("localhost", "root", "root", "games");
+     if (!$conn) {
+       die("Ошибка: " . mysqli_connect_error());
+     }
+     $sql = "SELECT * FROM games_load";
+
+
+
+     if($result = mysqli_query($conn, $sql)){
+
+         $rowsCount = mysqli_num_rows($result); // количество полученных строк
+         echo "<p>Получено объектов: $rowsCount</p>";
+
+
+     ?>
+     <?php
+       foreach($result as $row){
+       echo "<tr>";
+       ?>
+
+       <div class="cardblog ">
+         <?php
+
+
+  ?>  <h2> <?php   echo "<td>" . $row["name"] . "</td>";  ?>   <h2> <?php
+
+
+  ?>   <h5> <?php     echo "<td>" . $row["placement_date"] .  "      </td>"; ?> <h5> <?php
+
+ ?> <div>
+
+<?php
+
+
+        ?>
+        <div>
+        Картинкаааа
+        </div>
+        <?php
+
+
+
+echo "<td>" . $row["description"] .  "      </td>";
+
+?>
+ </div>
+<div>
+<h5><?php
+
+
+
+echo "<td>" . $row["img_path"] .  "      </td>";
+?>  </h5>
+</div>
+
+
+
+   <?php
+
+
+
+         echo "</tr>";
+       }
+       echo "</table>";
+     mysqli_free_result($result);
+     } else{
+     echo "Ошибка: " . mysqli_error($conn);
+     }
+     mysqli_close($conn);
+     ?>
+
+ </div>
+
+
+ </div>
+
+
+
+
     <div class="footer" style="flex: 100%">
         <footer>
 
