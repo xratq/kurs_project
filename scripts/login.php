@@ -45,7 +45,7 @@ else{
               alert('Вы вошли.');
             </script>";
         echo "<script>
-              window.location='../site/homeusers.html';
+              window.location='../site/homeusers.php';
               </script>";
         }
 }

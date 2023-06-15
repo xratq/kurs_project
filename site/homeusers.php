@@ -14,12 +14,12 @@
 
 <body style="background-image: url(../image/backgr.jpg)">
 <div class="topnav" id="myTopnav">
-    <a class="active" href="#Home">Главная</a>
+    <a class="active" href="homeusers.php">Главная</a>
     <a href="#Update">Обновления</a>
     <a href="#Info" onclick="openNav()" >Инфо </a>
     <div class="search-container">
-        <a href="login.html">Логин</a>
-        <a href="registration.html">Регистрация</a>
+        <a href="home.php">Выход</a>
+
     </div>
 
 
@@ -43,10 +43,8 @@
 </div>
 
 <div class="row">
-    
-        
-        <div class="flexx flexxhide" id="Flexhide">
-        <div class="leftcolumn">
+    <div class="flexx flexxhide" id="Flexhide">
+    <div class="leftcolumn">
         <?php
      $conn = mysqli_connect("localhost", "root", "root", "games");
      if (!$conn) {
@@ -95,11 +93,17 @@ echo "<td>" . $row["description"] .  "      </td>";
 <h5><?php
 
 
-
 echo "<td><img src='../image/" . $row["img_path"] .  "'>      </td>";
 ?>  </h5>
 </div>
-</div>
+<div>
+<button class="knopka">
+<?php echo "<a href='../games/" .$row["address"] . "'>Играть </a>"  ?>
+                </button>
+       </div>
+       </div>
+    
+
 
 
 
@@ -119,43 +123,33 @@ echo "<td><img src='../image/" . $row["img_path"] .  "'>      </td>";
 
  
 
-
- </div>
     
-
-
-
-
-        <div class="rightcolumn">
+ 
+        
+    </div>
+    <div class="rightcolumn">
             <div class="cardblog ">
                 <h2>Это платформа создана для проверки </h2>
                 <div class="fakeimg" style="height:100px;">Image</div>
-                <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+                <p>На этом сайте размещено множество игр</p>
             </div>
             <div class="cardblog ">
-                <h3>Popular Post</h3>
+                <h3>Популярные игры</h3>
                 <div class="fakeimg">Image</div><br>
                 <div class="fakeimg">Image</div><br>
                 <div class="fakeimg">Image</div>
             </div>
 
         </div>
+        </div>
+   
+</div>
+<div class="footer" style="flex: 100%">
+    <footer>
 
-    </div>
-    </div>
-    </div>
-
-
-    
-
-
-
-    <div class="footer" style="flex: 100%">
-        <footer>
-
-            <h3 style="color: #f1f1f1">Здесь конец страницы</h3>
-        </footer>
-    </div>
-    <script src="../scripts/headerscript.js"></script>
+        <h3 style="color: #f1f1f1">Здесь конец страницы</h3>
+    </footer>
+</div>
+<script src="../scripts/headerscript.js"></script>
 </body>
 </html>
